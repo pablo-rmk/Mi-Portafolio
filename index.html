@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap 5.3 con Bootswatch -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/5.2.3/morph/bootstrap.min.css"
+        integrity="sha512-9kbRw+1/EdzoBB85Lhvmksr87jNAj6Vl4ebRgJvz+1mUmRE9y78ROqc1mXSMsbOyxwip+U7AAZldtOR3lartQw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- JQuery 3.6.4 from Google -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <!-- Hoja de Estilos Externa -->
+    <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" href="" type="image/png" />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap" rel="stylesheet">
+    <title>Portafolio</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <div class="container-fluid ms-3">
+            <a class="navbar-brand">Mi Portafolio</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor03"
+                aria-controls="navbarColor03" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse me-3" id="navbarColor03">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="mailto:pablo.gutierrez.u@gmail.com">Contacto</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#modalUno">Intereses</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#modalDos">Acerca De</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link"
+                            href="./assets/docs/Curriculum Agosto 2022 Pablo Gutiérrez-comprimido.pdf">Mi
+                            Curriculum</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div id="modalUno" class="modal">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Mis Intereses</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true"></span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="d-flex justify-content-center">
+                        <div class="badge rounded-pill bg-light mx-auto">Programación</div>
+                        <div class="badge rounded-pill bg-light mx-auto">Desarrollo Web</div>
+                    </div>
+                    <div class="d-flex justify-content-center">
+                        <div class="badge rounded-pill bg-light mt-3">Colo Colo</div>
+                        <div class="badge rounded-pill bg-light ms-2 mt-3">Rock&Roll</div>
+                        <div class="badge rounded-pill bg-light ms-2 mt-3">Series</div>
+                    </div>
+                    <div class="d-flex justify-content-center">
+                        <div class="badge rounded-pill bg-light mt-3">Videojuegos</div>
+                        <div class="badge rounded-pill bg-light ms-2 mt-3">Familia y amigos</div>
+                        <div class="badge rounded-pill bg-light ms-2 mt-3">Viajes</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="modalDos" class="modal">
+        <div class="modal-dialog modal-dialog-centered modal-xl" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Acerca De</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true"></span>
+                    </button>
+                </div>
+                <div class="modal-body w-75 mx-auto mb-3">
+                    <p>Egresado de la carrera de Química Ambiental, con 12 años de experiencia laboral en el área
+                        medioambiental, en labores de terreno y gestión, formando parte de importantes empresas
+                        como CENMA (Universidad de Chile), Odotech (Envirosuite) y ESS Consultores, prestando
+                        servicios por medio de ellas a otras empresas como Aguas Andinas, KDM, Ariztía, Viña San Pedro,
+                        entre muchas otras, de distintos rubros y a lo largo de todo Chile.</p><br>
+                    <p>En la actualidad, decido aventurarme en el campo de la programación, para lo cuál realicé el
+                        bootcamp Desarrollador Full Stack Java Trainee, parte del programa Talento Digital (Sence),
+                        durante el primer semestre de 2022. Actualmente, estoy cursando el
+                        bootcamp Desarrollador Full Stack JavaScript Trainee, del mismo programa mencionado
+                        anteriormente. </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="avatar" class="container w-25 text-center">
+        <img class="img-fluid d-block mx-auto mt-3 mb-3" src="./assets/img/bordetertiarysubtle.png" alt="Pablo">
+    </div>
+    <div class="text-center">
+        <p id="titulo">Pablo Gutiérrez Urrutia</p>
+    </div>
+    <hr style="line-break: normal;">
+
+    <div>
+        <h2 class="pt-5 pb-3">Algunos de mis trabajos</h2>
+    </div>
+    <div class="container text-center">
+
+        <div class="row d-flex justify-content-around">
+            <div class="p-3 col-md-12 col-lg-4">
+                <div class="card">
+                    <img class="zoom" src="./assets/img/ricomida.png" class="card-img-top" alt="bebidas.jpg">
+                    <div class="card-body">
+                        <h5 class="card-title my-3">Web Ricomida</h5>
+                        <p class="card-text mt-5">Sitio web dedicado al arte culinario. Desafío evaluado, requisito para
+                            aprobar el curso Desarrollador Fullstack Java Trainee de Talento Digital.</p>
+                    </div>
+                    <div class="card-footer mb-3">
+                        <a type="button" class="btn btn-outline-info"
+                            href="https://pablo-rmk.github.io/Web-Ricomida/">Visitar Sitio</a>
+                    </div>
+                </div>
+            </div>
+            <div class="p-3 col-md-12 col-lg-4">
+                <div class="card">
+                    <img class="zoom" src="./assets/img/viajeschile.png" class="card-img-top" alt="bebidas.jpg">
+                    <div class="card-body">
+                        <h5 class="card-title my-3">Viajes Chile</h5>
+                        <p class="card-tex mt-5">Sitio web de viajes. Prueba del Módulo 2, Bootcamp DesarrolladorFull
+                            Stack
+                            Java Trainee de Talento Digital.</p>
+                    </div>
+                    <div class="card-footer mb-3">
+                        <a type="button" class="btn btn-outline-info"
+                            href="https://pablo-rmk.github.io/Prueba-Viajes-Chile/">Visitar Sitio</a>
+                    </div>
+                </div>
+            </div>
+            <div class="p-3 col-md-12 col-lg-4">
+                <div class="card">
+                    <img class="zoom" src="./assets/img/nimrodel.png" class="card-img-top" alt="bebidas.jpg">
+                    <div class="card-body">
+                        <h5 class="card-title my-3">Pub Nimrodel</h5>
+                        <p class="card-text mt-5">Sitio web del Pub Restaurant Nimrodel, trabajo realizado para el
+                            Módulo 2
+                            del Bootcamp Desarrollador Fullstack JavaScript Trainee de Talento Digital.</p>
+                    </div>
+                    <div class="card-footer mb-3">
+                        <a type="button" class="btn btn-outline-info"
+                            href="https://pablo-rmk.github.io/PubRestNimrodel/">Visitar Sitio</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light mt-5">
+            <div class="container-fluid">
+                <div class="collapse navbar-collapse" id="navbarColor03">
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item me-5">
+                            <a href="http://www.twitter.com"><i class="fa-brands fa-twitter"
+                                    style="color: #a6b2f3;"></i></a>
+                        </li>
+                        <li class="nav-item mx-5">
+                            <a href="https://github.com/pablo-rmk"><i class="fa-brands fa-github" 
+                                    style="color: #a6b2f3;"></i></a>
+                        </li>
+                        <li class="nav-item ms-5">
+                            <a href="http://www.linkedin.com"><i class="fa-brands fa-linkedin"
+                                    style="color: #a6b2f3;"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </footer>
+
+
+    <!-- Custom JavaScript -->
+    <script src="./assets/js/script.js"></script>
+    <!-- Js + Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
